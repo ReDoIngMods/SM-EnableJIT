@@ -5,6 +5,9 @@ A DLL mod for Scrap Mechanic that enables the LuaJIT JIT compiler.
 > [!NOTE]
 > Inject as early as possible, and always outside of a world (e.g. in the main menu). Lua states created before the hook is installed keep JIT disabled, so injecting while inside a world will not apply properly.
 
+> [!IMPORTANT]
+> This was discovered by [**Comeone / \_uchstalker\_**](https://github.com/UchStalker), credits to him finding it out!
+
 ## The problem
 
 Scrap Mechanic ships with LuaJIT's JIT compiler turned off, so all Lua code runs in the interpreter. Script-heavy creations and mods pay for it in performance.
